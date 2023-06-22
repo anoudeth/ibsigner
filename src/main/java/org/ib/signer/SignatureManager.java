@@ -52,7 +52,6 @@ public class SignatureManager {
     }
     public boolean rsaVerifyPub(String data, String signatureHex, PublicKey publicKey) throws NoSuchAlgorithmException, InvalidKeyException, SignatureException {
         Signature signer = Signature.getInstance("SHA256withRSA");
-//        System.out.println("signer: " + signer);
         signer.initVerify(publicKey);
         signer.update(data.getBytes());
         return signer.verify(DatatypeConverter.parseHexBinary(signatureHex));
@@ -73,7 +72,6 @@ public class SignatureManager {
         boolean status = false;
         try {
             PublicKey publicKey = this.loadPublicKeyFromFile(clientId);
-//            status = this.rsaVerify(data, signatureHex, publicKey);
             status = this.rsaVerifyPub(data, signatureHex, publicKey);
         } catch (Exception var5) {
             var5.printStackTrace();
