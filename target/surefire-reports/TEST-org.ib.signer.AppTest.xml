@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/nohder/dev/springboot/ibsigner/target/surefire/surefirebooter-20230622110536299_3.jar /Users/nohder/dev/springboot/ibsigner/target/surefire 2023-06-22T11-05-36_210-jvmRun1 surefire-20230622110536299_1tmp surefire_0-20230622110536299_2tmp"/>
+    <property name="sun.java.command" value="/Users/nohder/dev/springboot/ibsigner/target/surefire/surefirebooter-20230622111419705_3.jar /Users/nohder/dev/springboot/ibsigner/target/surefire 2023-06-22T11-14-19_617-jvmRun1 surefire-20230622111419705_1tmp surefire_0-20230622111419705_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/nohder/dev/springboot/ibsigner/target/test-classes:/Users/nohder/dev/springboot/ibsigner/target/classes:/Users/nohder/dev/apache-maven-3.9.0/maven_repo/junit/junit/3.8.1/junit-3.8.1.jar:/Users/nohder/dev/apache-maven-3.9.0/maven_repo/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/nohder/dev/apache-maven-3.9.0/maven_repo/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/nohder/dev/apache-maven-3.9.0/maven_repo/com/google/code/gson/gson/2.10/gson-2.10.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/nohder/dev/springboot/ibsigner/target/surefire/surefirebooter-20230622110536299_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/nohder/dev/springboot/ibsigner/target/surefire/surefirebooter-20230622111419705_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.6+10-LTS"/>
     <property name="user.name" value="nohder"/>
@@ -52,5 +52,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testApp" classname="org.ib.signer.AppTest" time="0.001"/>
+  <testcase name="testApp" classname="org.ib.signer.AppTest" time="0"/>
 </testsuite>
