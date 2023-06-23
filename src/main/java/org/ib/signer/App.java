@@ -11,7 +11,7 @@ public class App {
         if (args.length == 1) {
             SignatureManager signatureManager = new SignatureManager();
             JsonObject jsonObject = new Gson().fromJson(args[0], JsonObject.class);
-            String signature = signatureManager.genSignatureWithPrivate(jsonObject.toString(), "private.key");
+            String signature = signatureManager.genSignatureWithPrivate(jsonObject.toString(), "private1.key");
             System.out.println(signature);
 
         } else {

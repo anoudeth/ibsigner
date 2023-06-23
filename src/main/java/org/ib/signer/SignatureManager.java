@@ -27,17 +27,24 @@ public class SignatureManager {
                 .replaceAll("\r", "")
                 .replaceAll("\n", "")
                 .replace("-----END PRIVATE KEY-----", "");
-//        System.out.println("private key String: " + keyStr);
         byte[] keyEncoded = DatatypeConverter.parseBase64Binary(keyStr);
 
+//        PemFile pemFile = new PemFile("KeyPair" + File.separator + privateKeyName);
+//        System.out.println("PemFile object: " + pemFile.getPemObject());
+//        System.out.println("PemFile object.content: " + pemFile.getPemObject().getContent());
+//        byte[] keyEncoded = pemFile.getPemObject().getContent();
+
         return keyEncoded == null ? null : KeyFactory.getInstance("RSA").generatePrivate(new PKCS8EncodedKeySpec(keyEncoded));
-//        return this.loadPrivateKey(keyEncoded);
     }
     private PublicKey loadPublicKeyFromFile(String publicKeyName) throws NoSuchAlgorithmException, InvalidKeySpecException, IOException {
         String keyStr = new String(Files.readAllBytes((new File("KeyPair" + File.separator + publicKeyName)).toPath()), StandardCharsets.UTF_8);
         keyStr = keyStr.replace("-----BEGIN PUBLIC KEY-----", "").replaceAll("\r", "").replaceAll("\n", "").replace("-----END PUBLIC KEY-----", "");
         byte[] keyEncoded = DatatypeConverter.parseBase64Binary(keyStr);
 
+//        PemFile pemFile = new PemFile("KeyPair" + File.separator + publicKeyName);
+//        System.out.println("PemFile object: " + pemFile.getPemObject());
+//        System.out.println("PemFile object.content: " + pemFile.getPemObject().getContent());
+//        byte[] keyEncoded = pemFile.getPemObject().getContent();
 
         return keyEncoded == null ? null : KeyFactory.getInstance("RSA").generatePublic(new X509EncodedKeySpec(keyEncoded));
 
